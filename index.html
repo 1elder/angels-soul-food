@@ -1,297 +1,353 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Angel's Soul Food</title>
+<title>Angel's Soul Food Express · Orlando, FL</title>
+<meta name="description" content="Angel's Soul Food Express on Raleigh St in Orlando — fried chicken, catfish, smothered pork chops, soul food plates & 13 flavors of wings. Good food, fast. Made with love. 4.5★ hidden gem.">
+<meta property="og:title" content="Angel's Soul Food Express · Orlando, FL">
+<meta property="og:description" content="Fried chicken, catfish, soul food plates & 13 wing flavors on Raleigh St. Good food, fast — made with love.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://1elder.github.io/angels-soul-food/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍗</text></svg>">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Angel's Soul Food Express","image":"https://1elder.github.io/angels-soul-food/img/hero.jpg","servesCuisine":"Soul Food","priceRange":"$$","telephone":"+14074200177","url":"https://1elder.github.io/angels-soul-food/","address":{"@type":"PostalAddress","streetAddress":"4759 Raleigh St","addressLocality":"Orlando","addressRegion":"FL","postalCode":"32811","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":28.5284458,"longitude":-81.4420158},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"27"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"11:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"11:00","closes":"18:00"}]}
+</script>
 <style>
   :root{
-    --paper:#FBF2DF; --paper2:#F3E6CB; --card:#FFFBF1; --ink:#2A1A12; --ink-soft:#5C4739; --muted:#96826E;
-    --brick:#B23A2E; --brick-deep:#8E2B21; --mustard:#E0A21F; --collard:#3E6B3A;
-    --line:rgba(42,26,18,.14); --line-strong:rgba(42,26,18,.26);
-    --display:"Alfa Slab One",Georgia,serif; --body:"Mulish",system-ui,sans-serif;
-    --wrap:1140px;
+    --bg:#140F0E; --bg2:#1D1512; --card:#241A16; --card2:#2E211B; --ink:#FDF3E7; --soft:#D9C1AA; --muted:#9E8874;
+    --red:#E4121F; --red2:#FF3A2E; --gold:#F6B32B; --gold2:#FFD34E; --green:#8FBF3F;
+    --line:rgba(253,243,231,.12); --line2:rgba(253,243,231,.22);
+    --disp:"Bebas Neue",Impact,sans-serif; --cond:"Barlow Condensed",sans-serif; --body:"Barlow",system-ui,sans-serif;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
+  *{box-sizing:border-box; margin:0; padding:0}
   html{scroll-behavior:smooth}
-  body{background:var(--paper); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.62; -webkit-font-smoothing:antialiased; overflow-x:hidden}
-  .wrap{max-width:var(--wrap); margin:0 auto; padding:0 28px}
+  body{background:var(--bg); color:var(--ink); font-family:var(--body); font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 22px}
   a{color:inherit; text-decoration:none}
-  h1,h2,h3{font-family:var(--display); font-weight:400; line-height:1.02; letter-spacing:.005em; text-wrap:balance}
-  .eyebrow{font-family:var(--body); font-weight:800; font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--brick)}
-  .num{font-variant-numeric:tabular-nums}
-  .btn{font-family:var(--body); font-weight:800; font-size:15.5px; padding:12px 22px; border-radius:10px; cursor:pointer; border:2px solid transparent; transition:transform .16s ease, background .16s ease, color .16s ease; display:inline-flex; align-items:center; gap:8px}
-  .btn-brick{background:var(--brick); color:#fff} .btn-brick:hover{background:var(--brick-deep); transform:translateY(-2px)}
-  .btn-out{border-color:var(--ink); color:var(--ink)} .btn-out:hover{background:var(--ink); color:var(--paper)}
+  img{max-width:100%; display:block}
+  .disp{font-family:var(--disp); letter-spacing:.01em; line-height:.9}
+  .btn{display:inline-flex; align-items:center; gap:8px; font-family:var(--cond); font-weight:700; text-transform:uppercase; letter-spacing:.05em; font-size:17px; padding:14px 28px; border-radius:8px; cursor:pointer; border:0; transition:transform .12s ease, box-shadow .2s ease}
+  .btn-red{background:var(--red); color:#fff; box-shadow:0 7px 0 #9c0c15}
+  .btn-red:hover{transform:translateY(-2px); box-shadow:0 9px 0 #9c0c15}
+  .btn-gold{background:var(--gold); color:#2a1a05; box-shadow:0 7px 0 #b9821a}
+  .btn-gold:hover{transform:translateY(-2px); box-shadow:0 9px 0 #b9821a}
+  .btn-out{border:2px solid var(--line2); color:var(--ink)}
+  .btn-out:hover{border-color:var(--gold); color:var(--gold)}
 
-  header{position:sticky; top:0; z-index:100; background:color-mix(in srgb,var(--paper) 90%,transparent); backdrop-filter:blur(8px); border-bottom:2px solid var(--ink)}
-  nav{display:flex; align-items:center; justify-content:space-between; height:72px; gap:16px}
-  .brand{font-family:var(--display); font-size:21px; letter-spacing:.01em; color:var(--brick)}
-  .brand span{color:var(--ink)}
-  .navlinks{display:flex; gap:26px; font-size:14.5px; font-weight:700}
-  .navlinks a{color:var(--ink-soft)} .navlinks a:hover{color:var(--brick)}
-  .nav-cta{display:flex; gap:12px; align-items:center}
+  nav{position:sticky; top:0; z-index:60; background:rgba(20,15,14,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); height:66px; display:flex; align-items:center}
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; width:100%}
+  .brand{display:flex; align-items:center; gap:10px; white-space:nowrap}
+  .brand .mk{font-family:var(--disp); font-size:26px; letter-spacing:.02em; color:var(--ink)}
+  .brand .mk b{color:var(--red2)}
+  .navlinks{display:flex; gap:24px; align-items:center; font-family:var(--cond); text-transform:uppercase; font-weight:600; font-size:16px; letter-spacing:.03em; color:var(--soft)}
+  .navlinks a:hover{color:var(--gold)}
+  .nav-cta .btn{padding:10px 18px; font-size:15px; box-shadow:0 5px 0 #9c0c15}
 
-  .hero{position:relative; overflow:hidden; padding:clamp(50px,8vw,102px) 0 clamp(40px,6vw,74px)}
-  .hero::before{content:""; position:absolute; right:-14vw; top:-16vw; width:62vw; height:62vw; max-width:680px; max-height:680px; border-radius:50%; background:radial-gradient(circle,rgba(224,162,31,.22),transparent 62%); z-index:0}
-  .hero-in{position:relative; z-index:2; max-width:22ch}
-  .hero .kick{display:inline-block; font-family:var(--display); font-size:13px; letter-spacing:.02em; color:#fff; background:var(--collard); padding:6px 14px; border-radius:8px; transform:rotate(-2deg); margin-bottom:20px}
-  .hero h1{font-size:clamp(46px,8.4vw,110px); line-height:.98}
-  .hero h1 .b{color:var(--brick)} .hero h1 .m{color:var(--mustard)}
-  .hero .lede{margin:24px 0 0; max-width:46ch; font-size:clamp(17px,1.6vw,20px); color:var(--ink-soft)}
-  .praise{display:flex; align-items:center; gap:11px; margin:20px 0 30px; font-weight:700; font-size:14.5px; color:var(--ink-soft)}
-  .praise .st{color:var(--mustard); letter-spacing:2px; font-size:16px}
-  .hero-cta{display:flex; gap:13px; flex-wrap:wrap}
+  /* HERO */
+  .hero{position:relative; min-height:90vh; display:flex; align-items:center; overflow:hidden}
+  .hero .bg{position:absolute; inset:0; background:#0d0a09 url('img/hero.jpg') center 42%/cover no-repeat}
+  .hero .scrim{position:absolute; inset:0; background:
+     linear-gradient(90deg, rgba(13,10,9,.92) 0%, rgba(13,10,9,.78) 42%, rgba(13,10,9,.4) 100%),
+     linear-gradient(180deg, rgba(13,10,9,.5), rgba(13,10,9,.75))}
+  .hero .wrap{position:relative; z-index:3; padding:70px 22px}
+  .hero .eyebrow{font-family:var(--cond); text-transform:uppercase; letter-spacing:.18em; font-size:15px; font-weight:700; color:var(--gold2); margin-bottom:12px}
+  .hero h1{font-family:var(--disp); font-size:clamp(58px,13vw,132px); line-height:.86; text-shadow:0 4px 24px rgba(0,0,0,.6)}
+  .hero h1 .r{color:var(--red2)} .hero h1 .g{color:var(--gold2)}
+  .hero .lead{font-size:clamp(16px,2.2vw,20px); color:var(--ink); max-width:520px; margin:20px 0 10px; font-weight:500; text-shadow:0 2px 12px rgba(0,0,0,.8)}
+  .hero .rate{font-family:var(--cond); font-weight:700; text-transform:uppercase; letter-spacing:.04em; font-size:16px; color:var(--gold2); margin-bottom:24px}
+  .hero .cta-row{display:flex; gap:12px; flex-wrap:wrap}
 
-  .ticker{background:var(--ink); color:var(--paper); overflow:hidden; white-space:nowrap}
-  .tk{display:inline-flex; gap:32px; padding:13px 0; font-family:var(--display); font-size:15px; letter-spacing:.02em; text-transform:uppercase; animation:mv 30s linear infinite}
-  .tk span{display:inline-flex; gap:32px} .tk b{color:var(--mustard)}
-  @keyframes mv{to{transform:translateX(-50%)}}
+  .strip{background:var(--red); color:#fff; padding:12px 0; overflow:hidden; border-top:3px solid var(--gold); border-bottom:3px solid var(--gold)}
+  .stk{display:inline-flex; white-space:nowrap; animation:scrollx 26s linear infinite; font-family:var(--disp); font-size:20px; letter-spacing:.03em}
+  .stk span{padding:0 20px} .stk .d{color:var(--gold2)}
 
-  section{padding:clamp(54px,8vw,100px) 0}
-  .sh{margin-bottom:38px; display:flex; justify-content:space-between; align-items:end; gap:22px; flex-wrap:wrap}
-  .sh h2{font-size:clamp(32px,5vw,58px)}
-  .sh p{max-width:38ch; color:var(--ink-soft)}
+  section{padding:78px 0}
+  .sec-h{text-align:center; max-width:680px; margin:0 auto 46px}
+  .sec-h .k{font-family:var(--cond); text-transform:uppercase; letter-spacing:.16em; font-size:15px; font-weight:700; color:var(--red2)}
+  .sec-h h2{font-family:var(--disp); font-size:clamp(40px,7vw,78px); line-height:.9; margin:6px 0 12px}
+  .sec-h p{color:var(--soft); font-size:16.5px}
 
-  .band{background:var(--brick); color:#fff}
-  .band .wrap{text-align:center}
-  .band h2{font-size:clamp(30px,4.6vw,54px); max-width:20ch; margin:12px auto 0} .band h2 .y{color:var(--mustard)}
-  .band .sub{color:#F6DDD8; max-width:52ch; margin:18px auto 0}
-  .three{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:44px; text-align:left}
-  .cell{background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.20); border-radius:14px; padding:24px 22px}
-  .cell .n{font-family:var(--display); color:var(--mustard); font-size:15px}
-  .cell h3{font-family:var(--body); font-weight:800; font-size:18px; margin:12px 0 6px}
-  .cell p{font-size:14px; color:#F6DDD8}
+  /* deals */
+  .deals{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  .deal{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px 22px; position:relative; overflow:hidden}
+  .deal.hot{background:linear-gradient(150deg,#3a120e,#241a16); border-color:rgba(255,58,46,.4)}
+  .deal .tag{font-family:var(--cond); text-transform:uppercase; letter-spacing:.06em; font-weight:700; font-size:13px; color:var(--gold2)}
+  .deal h3{font-family:var(--disp); font-size:30px; line-height:.95; margin:6px 0 6px}
+  .deal p{color:var(--soft); font-size:14px; min-height:38px}
+  .deal .pr{font-family:var(--disp); font-size:44px; color:var(--red2); line-height:1; margin-top:8px}
+  .deal.hot .pr{color:var(--gold2)}
 
-  .cats{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:28px}
-  .cat{font-family:var(--body); font-weight:800; font-size:12px; text-transform:uppercase; letter-spacing:.06em; padding:8px 14px; border:2px solid var(--line-strong); border-radius:999px; color:var(--ink-soft)}
-  .menu{display:grid; grid-template-columns:1fr 1fr; gap:0 52px}
-  .item{display:flex; gap:14px; align-items:baseline; padding:16px 0; border-bottom:1px solid var(--line)}
-  .item:hover .iname{color:var(--brick)}
-  .ibody{flex:1} .itop{display:flex; align-items:baseline; gap:10px}
-  .iname{font-family:var(--display); font-size:19px; line-height:1.1; transition:color .15s ease}
-  .idot{flex:1; border-bottom:1.5px dotted var(--line-strong); transform:translateY(-4px)}
-  .price{font-family:var(--body); font-weight:800; font-size:16px; color:var(--brick)}
-  .idesc{font-size:13.5px; color:var(--ink-soft); margin-top:3px; max-width:42ch}
-  .tag{font-family:var(--body); font-weight:800; font-size:10px; text-transform:uppercase; letter-spacing:.06em; padding:2px 8px; border-radius:6px; border:1px solid var(--line-strong); color:var(--muted)}
-  .tag.sig{color:var(--brick); border-color:color-mix(in srgb,var(--brick) 45%,transparent)}
-  .tag.veg{color:var(--collard); border-color:color-mix(in srgb,var(--collard) 45%,transparent)}
+  /* wing king */
+  .wing{background:linear-gradient(180deg,#0f0b0a,#1a0e0c); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  .wing-top{display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; margin-bottom:44px}
+  .wing-photo{border-radius:16px; overflow:hidden; border:3px solid var(--gold); box-shadow:0 24px 50px rgba(0,0,0,.55); aspect-ratio:4/3}
+  .wing-photo img{width:100%; height:100%; object-fit:cover}
+  .wing .k{font-family:var(--cond); text-transform:uppercase; letter-spacing:.16em; font-weight:700; font-size:15px; color:var(--gold2)}
+  .wing h2{font-family:var(--disp); font-size:clamp(46px,8vw,92px); line-height:.86; margin:6px 0 12px}
+  .wing h2 .r{color:var(--red2)}
+  .wing .sub{color:var(--soft); font-size:17px; margin-bottom:18px; max-width:44ch}
+  .flav{display:flex; flex-wrap:wrap; gap:8px}
+  .flav span{font-family:var(--cond); text-transform:uppercase; font-weight:600; letter-spacing:.03em; font-size:14px; padding:7px 13px; border-radius:999px; background:var(--card2); border:1px solid var(--line2); color:var(--ink)}
+  .flav span.f{background:var(--red); border-color:var(--red); color:#fff}
+  .wing-price{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:26px 28px}
+  .wing-price h3{font-family:var(--disp); font-size:30px; margin-bottom:14px; text-align:center; letter-spacing:.02em}
+  .combos{display:flex; gap:12px; justify-content:center; margin-bottom:18px; flex-wrap:wrap}
+  .combo{background:var(--red); color:#fff; border-radius:10px; padding:12px 18px; text-align:center; min-width:150px}
+  .combo b{font-family:var(--cond); text-transform:uppercase; font-size:15px; font-weight:700; display:block}
+  .combo .p{font-family:var(--disp); font-size:30px; color:var(--gold2); line-height:1}
+  .pcs{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
+  .pc{display:flex; justify-content:space-between; align-items:baseline; background:var(--bg2); border:1px solid var(--line); border-radius:8px; padding:9px 12px; font-family:var(--cond); font-weight:600}
+  .pc b{font-size:17px} .pc .p{color:var(--gold2); font-size:18px; font-weight:700}
 
-  .gal{display:grid; grid-template-columns:repeat(4,1fr); gap:14px}
-  .gt{aspect-ratio:1; border-radius:16px; overflow:hidden; position:relative; display:flex; align-items:end; padding:18px; border:2px solid var(--ink)}
-  .gt:nth-child(1){background:linear-gradient(150deg,#D98A2A,#7a4412)}
-  .gt:nth-child(2){background:linear-gradient(150deg,#B23A2E,#6d211a)}
-  .gt:nth-child(3){background:linear-gradient(150deg,#3E6B3A,#213b20)}
-  .gt:nth-child(4){background:linear-gradient(150deg,#E0A21F,#8a5f12)}
-  .gt.wide{grid-column:span 2; aspect-ratio:auto}
-  .gt span{font-family:var(--display); color:#fff; font-size:17px; position:relative; z-index:2; text-shadow:0 2px 10px rgba(0,0,0,.45)}
-  .gt::after{content:""; position:absolute; inset:0; background:linear-gradient(transparent 45%,rgba(0,0,0,.45))}
+  /* build a plate */
+  .plate-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:start}
+  .col{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:26px 28px}
+  .col h3{font-family:var(--disp); font-size:30px; letter-spacing:.02em; margin-bottom:6px}
+  .col .note{color:var(--muted); font-size:13px; margin-bottom:14px; font-family:var(--cond); text-transform:uppercase; letter-spacing:.05em; font-weight:600}
+  .col ul{list-style:none; columns:2; column-gap:22px}
+  .col li{padding:6px 0; font-size:15.5px; color:var(--soft); break-inside:avoid; border-bottom:1px solid rgba(253,243,231,.06)}
+  .col li:before{content:"›"; color:var(--red2); font-weight:700; margin-right:8px}
 
-  .story{display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center}
-  .story .bq{font-family:var(--display); font-size:clamp(24px,3.3vw,40px); line-height:1.18} .story .bq b{color:var(--brick)}
-  .story p{color:var(--ink-soft); margin-top:18px}
+  /* reviews */
+  .revs{background:var(--bg2)}
+  .rev-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  .rev{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:26px 24px}
+  .rev .stars{color:var(--gold2); font-size:16px; letter-spacing:2px; margin-bottom:10px}
+  .rev p{font-size:16px; color:var(--ink); font-style:italic; line-height:1.5}
+  .rev .by{margin-top:12px; font-family:var(--cond); text-transform:uppercase; letter-spacing:.05em; font-weight:600; font-size:13px; color:var(--muted)}
 
-  .reviews{background:var(--paper2)}
-  .rt{text-align:center; margin-bottom:38px}
-  .rt .score{font-family:var(--display); font-size:60px; color:var(--brick); line-height:.9}
-  .rg{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
-  .rev{background:var(--card); border:2px solid var(--ink); border-radius:14px; padding:24px}
-  .rev .st{color:var(--mustard); font-size:14px} .rev p{margin:12px 0 14px; font-size:15px; line-height:1.5}
-  .rev .who{font-family:var(--body); font-weight:800; font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-soft)}
+  /* gallery */
+  .gal{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
+  .gal a{border-radius:12px; overflow:hidden; aspect-ratio:1; background:var(--card)}
+  .gal img{width:100%; height:100%; object-fit:cover; transition:transform .4s ease}
+  .gal a:hover img{transform:scale(1.08)}
+  .gal .tall{grid-row:span 2; aspect-ratio:auto}
 
-  .visit{display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:stretch}
-  .visit h2{font-size:clamp(30px,4.6vw,54px)}
-  .rows{margin-top:24px; border-top:2px solid var(--ink)}
-  .row{display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid var(--line); font-size:15px}
-  .row .k{font-family:var(--body); font-weight:800; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted)}
-  .row .v{text-align:right}
-  .map{border-radius:18px; border:2px solid var(--ink); min-height:330px; position:relative; overflow:hidden; background:radial-gradient(circle at 34% 30%,#F6EAD0,#EDD9B4)}
-  .map .gl{position:absolute; inset:0; opacity:.55; background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px); background-size:44px 44px}
-  .pin2{position:absolute; left:50%; top:50%; transform:translate(-50%,-100%); text-align:center}
-  .pin2 .d{width:20px; height:20px; border-radius:50% 50% 50% 0; background:var(--brick); transform:rotate(-45deg); margin:0 auto; box-shadow:0 8px 18px rgba(0,0,0,.25)}
-  .pin2 .l{font-family:var(--display); font-size:12px; margin-top:11px}
+  /* visit */
+  .visit-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px}
+  .vcard{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:30px 28px}
+  .vcard h3{font-family:var(--disp); font-size:30px; letter-spacing:.02em; margin-bottom:14px}
+  .vcard .row{display:flex; gap:12px; padding:8px 0; font-size:15.5px; color:var(--soft)}
+  .vcard .row .i{flex:none}
+  .hours div{display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--line); font-family:var(--cond); font-weight:600; font-size:16px; color:var(--soft)}
+  .hours div:last-child{border:0} .hours div b{color:var(--ink)} .hours .closed{color:var(--muted)}
 
-  .final{text-align:center; background:var(--ink); color:var(--paper)}
-  .final h2{font-size:clamp(38px,6.5vw,86px)} .final h2 .m{color:var(--mustard)}
-  .final .hero-cta{justify-content:center; margin-top:28px}
-  .final .btn-out{border-color:var(--paper); color:var(--paper)} .final .btn-out:hover{background:var(--paper); color:var(--ink)}
+  .fcta{position:relative; text-align:center; padding:92px 0; overflow:hidden}
+  .fcta .bg{position:absolute; inset:0; background:#0d0a09 url('img/wings.jpg') center/cover no-repeat}
+  .fcta .scrim{position:absolute; inset:0; background:linear-gradient(rgba(13,10,9,.8),rgba(13,10,9,.9))}
+  .fcta .wrap{position:relative; z-index:2}
+  .fcta h2{font-family:var(--disp); font-size:clamp(46px,9vw,104px); line-height:.88; margin-bottom:12px}
+  .fcta h2 .r{color:var(--red2)} .fcta h2 .g{color:var(--gold2)}
+  .fcta p{color:var(--soft); max-width:500px; margin:0 auto 24px; font-size:17px}
 
-  footer{background:var(--ink); color:var(--paper); padding:48px 0 32px}
-  .foot{display:flex; justify-content:space-between; gap:28px; flex-wrap:wrap}
-  .foot .brand{font-size:22px; margin-bottom:10px}
-  .foot p{color:#B7A794; font-size:14px; max-width:32ch}
-  .fc h4{font-family:var(--display); font-size:14px; margin-bottom:12px; color:var(--mustard)}
-  .fc a,.fc div{display:block; color:#B7A794; font-size:14px; margin-bottom:7px} .fc a:hover{color:var(--mustard)}
-  .credit{margin-top:34px; padding-top:20px; border-top:1px solid rgba(251,242,223,.16); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-weight:700; font-size:12px; color:#96826E}
-  .credit a{color:var(--mustard)}
+  footer{background:#0d0a09; border-top:1px solid var(--line); padding:38px 0 30px; text-align:center; color:var(--muted); font-size:14px}
+  footer .mk{font-family:var(--disp); font-size:30px; color:var(--ink); letter-spacing:.02em; margin-bottom:6px}
+  footer .mk b{color:var(--red2)}
+  footer .built{margin-top:14px; font-size:12px; opacity:.75}
 
-  .reveal{opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease}
+  .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease}
   .reveal.in{opacity:1; transform:none}
-  :focus-visible{outline:3px solid var(--brick); outline-offset:2px}
-  @media (max-width:860px){
-    .three,.rg{grid-template-columns:1fr} .menu{grid-template-columns:1fr} .gal{grid-template-columns:repeat(2,1fr)}
-    .story,.visit{grid-template-columns:1fr; gap:28px} .navlinks{display:none}
-    nav{height:auto; min-height:60px; padding:9px 0}
-    .brand{font-size:17px; white-space:nowrap}
-    .nav-cta .btn-out{display:none}
-    .nav-cta .btn{padding:10px 16px; font-size:14px}
+  @keyframes scrollx{to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.stk{animation:none}}
+
+  @media(max-width:860px){
+    nav{height:auto; min-height:58px; padding:8px 0} .navlinks{display:none}
+    .hero{min-height:82vh}
+    .deals{grid-template-columns:1fr}
+    .wing-top{grid-template-columns:1fr; gap:24px} .wing-photo{order:-1}
+    .pcs{grid-template-columns:repeat(2,1fr)}
+    .plate-grid{grid-template-columns:1fr}
+    .rev-grid{grid-template-columns:1fr}
+    .gal{grid-template-columns:1fr 1fr} .gal .tall{grid-row:auto; aspect-ratio:1}
+    .visit-grid{grid-template-columns:1fr}
+    section{padding:56px 0}
   }
-  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  @media(max-width:480px){ .col ul{columns:1} }
 </style>
 </head>
-<body>
+<body id="top">
 
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><span style="font-size:26px">🍗</span><span class="mk">ANGEL'S <b>SOUL FOOD</b></span></a>
+    <div class="navlinks"><a href="#wings">Wings</a><a href="#plates">Plates</a><a href="#menu">Menu</a><a href="#visit">Visit</a></div>
+    <div class="nav-cta"><a class="btn btn-red" href="tel:4074200177">Call to Order</a></div>
+  </div>
+</nav>
 
-<header>
-  <nav class="wrap">
-    <a href="#" class="brand">Angel's <span>Soul Food</span></a>
-    <div class="navlinks"><a href="#menu">Menu</a><a href="#order">Order Direct</a><a href="#story">Our Story</a><a href="#visit">Visit</a></div>
-    <div class="nav-cta">
-      <a href="tel:4074200177" class="btn btn-out">(407) 420-0177</a>
-      <a href="#menu" class="btn btn-brick">See Menu</a>
-    </div>
-  </nav>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="wrap hero-in">
-      <span class="kick">Fresh. Not Frozen.</span>
-      <h1>Soul food <span class="b">done</span> <span class="m">right.</span></h1>
-      <p class="lede">Fried chicken, fish, and pork chops cooked to order — with collards, mac &amp; cheese, and cornbread that taste like Sunday. Metrowest's plate, on Raleigh St.</p>
-      <div class="praise"><span class="st">★★★★★</span><span>Loved for the fried chicken, greens &amp; mac</span></div>
-      <div class="hero-cta">
-        <a href="#menu" class="btn btn-brick">See the Menu →</a>
-        <a href="#visit" class="btn btn-out">Get Directions</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="ticker" aria-hidden="true">
-    <div class="tk">
-      <span>Fried chicken &nbsp;<b>★</b>&nbsp; Collard greens &nbsp;<b>★</b>&nbsp; Mac &amp; cheese &nbsp;<b>★</b>&nbsp; Cornbread &nbsp;<b>★</b>&nbsp; Pork chops &nbsp;<b>★</b>&nbsp; Candied yams &nbsp;<b>★</b>&nbsp;</span>
-      <span>Fried chicken &nbsp;<b>★</b>&nbsp; Collard greens &nbsp;<b>★</b>&nbsp; Mac &amp; cheese &nbsp;<b>★</b>&nbsp; Cornbread &nbsp;<b>★</b>&nbsp; Pork chops &nbsp;<b>★</b>&nbsp; Candied yams &nbsp;<b>★</b>&nbsp;</span>
+<header class="hero">
+  <div class="bg"></div><div class="scrim"></div>
+  <div class="wrap">
+    <div class="eyebrow">Angel's Soul Food Express · West Orlando</div>
+    <h1 class="disp">Bold Flavor.<br><span class="r">Soulful</span><br><span class="g">Satisfaction.</span></h1>
+    <p class="lead">Fried chicken, catfish, smothered pork chops, and 13 flavors of wings — good food, fast, made with love right here on Raleigh St.</p>
+    <div class="rate">★★★★★ 4.5 · A West Orlando hidden gem</div>
+    <div class="cta-row">
+      <a class="btn btn-red" href="tel:4074200177">Call to Order</a>
+      <a class="btn btn-out" href="#menu">See the Menu</a>
     </div>
   </div>
+</header>
 
-  <section class="band" id="order">
-    <div class="wrap reveal">
-      <p class="eyebrow" style="color:var(--mustard)">Skip the middleman</p>
-      <h2>Order direct. <span class="y">Keep more of every plate.</span></h2>
-      <p class="sub">DoorDash and Uber are great for discovery — but they take a big cut of every order. A direct-order site puts that money back in your register.</p>
-      <div class="three">
-        <div class="cell"><span class="n">01</span><h3>No app commissions</h3><p>Customers order straight from you — no 20–30% skimmed off the top.</p></div>
-        <div class="cell"><span class="n">02</span><h3>Your menu on Google</h3><p>Show up when folks search soul food near Metrowest, menu and all.</p></div>
-        <div class="cell"><span class="n">03</span><h3>Call-ahead &amp; catering</h3><p>Let regulars order ahead and book trays for the family &amp; church.</p></div>
-      </div>
+<div class="strip">
+  <div class="stk">
+    <span>13 Wing Flavors</span><span class="d">✦</span><span>Fried Chicken</span><span class="d">✦</span><span>Catfish &amp; Whiting</span><span class="d">✦</span><span>Smothered Pork Chops</span><span class="d">✦</span><span>Mac &amp; Cheese</span><span class="d">✦</span><span>Made With Love</span><span class="d">✦</span>
+    <span>13 Wing Flavors</span><span class="d">✦</span><span>Fried Chicken</span><span class="d">✦</span><span>Catfish &amp; Whiting</span><span class="d">✦</span><span>Smothered Pork Chops</span><span class="d">✦</span><span>Mac &amp; Cheese</span><span class="d">✦</span><span>Made With Love</span><span class="d">✦</span>
+  </div>
+</div>
+
+<section id="deals">
+  <div class="wrap">
+    <div class="sec-h reveal"><div class="k">Good food, fast</div><h2>The Deals</h2><p>Real soul food plates, real portions, real prices.</p></div>
+    <div class="deals">
+      <div class="deal hot reveal"><div class="tag">🔥 Best Value</div><h3>2 PC Chicken<br>&amp; Cornbread</h3><p>Two pieces of our fried chicken with a sweet cornbread muffin.</p><div class="pr">$5.99</div></div>
+      <div class="deal reveal"><div class="tag">Small Plate</div><h3>1 Meat<br>&amp; 2 Sides</h3><p>Pick your meat and two soul food sides.</p><div class="pr">$15.99</div></div>
+      <div class="deal reveal"><div class="tag">Large Plate</div><h3>2 Meats<br>&amp; 3 Sides</h3><p>The full spread — two meats, three sides.</p><div class="pr">$20.99<span style="font-size:18px">+</span></div></div>
+      <div class="deal reveal"><div class="tag">Fan Favorite</div><h3>Chicken<br>&amp; 2 Sides</h3><p>Fried chicken and two sides, done fast.</p><div class="pr">$12.99</div></div>
+      <div class="deal reveal"><div class="tag">Seafood</div><h3>Catfish<br>&amp; 2 Sides</h3><p>Golden fried catfish. Add a third side for $24.99.</p><div class="pr">$18.99</div></div>
+      <div class="deal hot reveal"><div class="tag">☀️ Family Special</div><h3>8 PC Chicken<br>Family Pack</h3><p>8 pc dark chicken, 2 large sides &amp; 4 cornbread.</p><div class="pr">$27.99</div></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="menu">
-    <div class="wrap">
-      <div class="sh reveal"><div><p class="eyebrow">The Plate</p><h2>What's cooking</h2></div><p>Dinners come with two sides and cornbread. Fresh, never frozen — cooked to order.</p></div>
-      <div class="cats reveal"><span class="cat">Dinners</span><span class="cat">By the Piece</span><span class="cat">Sides</span><span class="cat">Drinks</span></div>
-      <div class="menu reveal">
-        <div class="item"><div class="ibody"><div class="itop"><span class="iname">Fried Chicken Dinner</span><span class="idot"></span><span class="price">$11</span></div><p class="idesc">Fresh-fried chicken, two sides &amp; cornbread. <span class="tag sig">Signature</span></p></div></div>
-        <div class="item"><div class="ibody"><div class="itop"><span class="iname">Fried Fish Dinner</span><span class="idot"></span><span class="price">$12</span></div><p class="idesc">Cornmeal-crusted whiting or catfish, two sides &amp; cornbread.</p></div></div>
-        <div class="item"><div class="ibody"><div class="itop"><span class="iname">Fried Pork Chops</span><span class="idot"></span><span class="price">$12</span></div><p class="idesc">Two chops cooked to order, two sides &amp; cornbread.</p></div></div>
-        <div class="item"><div class="ibody"><div class="itop"><span class="iname">Wings (6 pc)</span><span class="idot"></span><span class="price">$9</span></div><p class="idesc">Fresh wings, fried crispy, your choice of flavor.</p></div></div>
-        <div class="item"><div class="ibody"><div class="itop"><span class="iname">Collard Greens</span><span class="idot"></span><span class="price">$4</span></div><p class="idesc">Slow-cooked, seasoned right. <span class="tag veg">Side</span></p></div></div>
-        <div class="item"><div class="ibody"><div class="itop"><span class="iname">Mac &amp; Cheese</span><span class="idot"></span><span class="price">$4</span></div><p class="idesc">Baked, cheesy, a house favorite.</p></div></div>
-        <div class="item"><div class="ibody"><div class="itop"><span class="iname">Candied Yams &middot; Baked Beans</span><span class="idot"></span><span class="price">$4</span></div><p class="idesc">The classics, done the old way.</p></div></div>
-        <div class="item"><div class="ibody"><div class="itop"><span class="iname">Family Meal (8 pc + sides)</span><span class="idot"></span><span class="price">$28</span></div><p class="idesc">Feeds the whole table. Add extra sides anytime.</p></div></div>
-      </div>
-      <p style="text-align:center; margin-top:24px; font-family:var(--body); font-weight:700; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em">Sample menu &amp; pricing for layout — your real plates drop right in.</p>
-    </div>
-  </section>
-
-  <section style="padding-top:0">
-    <div class="wrap"><div class="gal reveal">
-      <div class="gt wide"><span>Fried chicken, cooked to order</span></div>
-      <div class="gt"><span>Collards &amp; mac</span></div>
-      <div class="gt"><span>Golden cornbread</span></div>
-    </div></div>
-  </section>
-
-  <section id="story">
-    <div class="wrap story reveal">
-      <div><p class="eyebrow">Our Story</p><p class="bq">Fresh, never frozen &mdash; <b>cooked like it's for family.</b></p></div>
+<section id="wings" class="wing">
+  <div class="wrap">
+    <div class="wing-top">
       <div>
-        <p>Angel's Soul Food Express brings real Southern cooking to Metrowest: chicken fried to order, greens slow-cooked, cornbread baked fresh. No steam-table shortcuts.</p>
-        <p>Great portions at a great price — the kind of plate that brings you back next week. Come hungry, leave full, tell a friend.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="reviews">
-    <div class="wrap">
-      <div class="rt reveal"><div class="score">★★★★★</div><p style="color:var(--ink-soft); margin-top:10px; font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.05em">A Metrowest favorite</p></div>
-      <div class="rg reveal">
-        <div class="rev"><div class="st">★★★★★</div><p>&ldquo;Best fried chicken in the area — great portion for the price, and the mac is unreal.&rdquo;</p><div class="who">Customer review</div></div>
-        <div class="rev"><div class="st">★★★★★</div><p>&ldquo;Collard greens and cornbread taste just like grandma made. My new Sunday spot.&rdquo;</p><div class="who">Customer review</div></div>
-        <div class="rev"><div class="st">★★★★★</div><p>&ldquo;Fresh, not frozen, and you can tell. Friendly folks and big plates.&rdquo;</p><div class="who">Customer review</div></div>
-      </div>
-      <p style="text-align:center; margin-top:20px; font-family:var(--body); font-weight:700; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em">Sample reviews for layout — live Google reviews would sync in.</p>
-    </div>
-  </section>
-
-  <section id="visit">
-    <div class="wrap visit">
-      <div class="reveal">
-        <p class="eyebrow">Come Get a Plate</p>
-        <h2>Find us on Raleigh St.</h2>
-        <div class="rows">
-          <div class="row"><span class="k">Address</span><span class="v">4759 Raleigh St<br>Orlando, FL (Metrowest)</span></div>
-          <div class="row"><span class="k">Phone</span><span class="v num">(407) 420-0177</span></div>
-          <div class="row"><span class="k">Tue – Thu</span><span class="v num">11:00a – 9:00p</span></div>
-          <div class="row"><span class="k">Fri – Sat</span><span class="v num">11:00a – 10:00p</span></div>
-          <div class="row"><span class="k">Sunday</span><span class="v num">12:00p – 7:00p</span></div>
-          <div class="row"><span class="k">Monday</span><span class="v">Closed</span></div>
-        </div>
-        <div class="hero-cta" style="margin-top:26px">
-          <a href="tel:4074200177" class="btn btn-brick">Call to Order →</a>
-          <a href="#" class="btn btn-out">Directions</a>
+        <div class="k reveal">Bold flavor, soulful satisfaction</div>
+        <h2 class="reveal">The <span class="r">Wing King</span></h2>
+        <p class="sub reveal">Get any fried meat tossed in one of our <b>13 flavors</b> — from Honey Garlic to Booty Hot to All Around The World.</p>
+        <div class="flav reveal">
+          <span class="f">Hot</span><span>Mild</span><span>Lemon Pepper</span><span>Hot Lemon Pepper</span><span>Honey Garlic</span><span class="f">Hot Honey Garlic</span><span>Honey Hot</span><span class="f">Sweet Angel's BBQ</span><span>Hot Garlic</span><span class="f">Booty Hot</span><span>Garlic Parmesan</span><span>Hot Garlic Parmesan</span><span class="f">All Around The World</span>
         </div>
       </div>
-      <div class="map reveal" role="img" aria-label="Map showing Angel's Soul Food at 4759 Raleigh St, Metrowest, Orlando">
-        <div class="gl"></div><div class="pin2"><div class="d"></div><div class="l">Angel's Soul Food</div></div>
+      <div class="wing-photo reveal"><img src="img/wings.jpg" alt="Loaded fried wings tossed in sauce"></div>
+    </div>
+    <div class="wing-price reveal">
+      <h3>Wing Pricing</h3>
+      <div class="combos">
+        <div class="combo"><b>5 Wings &amp; Fries</b><span class="p">$10.95</span></div>
+        <div class="combo"><b>8 Wings &amp; Fries</b><span class="p">$13.95</span></div>
+      </div>
+      <div class="pcs">
+        <div class="pc"><b>5 PC</b><span class="p">$7.99</span></div>
+        <div class="pc"><b>8 PC</b><span class="p">$11.99</span></div>
+        <div class="pc"><b>10 PC</b><span class="p">$14.95</span></div>
+        <div class="pc"><b>15 PC</b><span class="p">$19.95</span></div>
+        <div class="pc"><b>20 PC</b><span class="p">$26.99</span></div>
+        <div class="pc"><b>25 PC</b><span class="p">$33.99</span></div>
+        <div class="pc"><b>30 PC</b><span class="p">$40.99</span></div>
+        <div class="pc"><b>40 PC</b><span class="p">$55.99</span></div>
+        <div class="pc"><b>50 PC</b><span class="p">$67.99</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="final">
-    <div class="wrap reveal">
-      <p class="eyebrow" style="color:var(--mustard)">Dinner's ready</p>
-      <h2>Come get a <span class="m">plate.</span></h2>
-      <div class="hero-cta">
-        <a href="#menu" class="btn btn-brick">See the Menu →</a>
-        <a href="tel:4074200177" class="btn btn-out">Call (407) 420-0177</a>
+<section id="plates">
+  <div class="wrap">
+    <div class="sec-h reveal"><div class="k">Fresh, hot &amp; homemade</div><h2>Real Soul Food Plates</h2></div>
+    <div class="gal reveal" style="grid-template-columns:repeat(3,1fr); margin-bottom:8px">
+      <a href="img/plates.jpg" target="_blank"><img src="img/plates.jpg" alt="Soul food plate with pork chop, mac and cheese, greens and cornbread"></a>
+      <a href="img/combo.jpg" target="_blank"><img src="img/combo.jpg" alt="Fried chicken, shrimp and whiting combo with mac and yams"></a>
+      <a href="img/boxes.jpg" target="_blank"><img src="img/boxes.jpg" alt="Fried chicken and fries baskets"></a>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-h reveal"><div class="k">Build your plate</div><h2>The Full Menu</h2><p>Pick your meat, load up your sides. Items may vary by day.</p></div>
+    <div class="plate-grid">
+      <div class="col reveal">
+        <h3>🍗 Meats</h3>
+        <div class="note">Choose your protein</div>
+        <ul>
+          <li>Fried Chicken</li><li>Baked or BBQ Chicken</li><li>Stewed Chicken</li>
+          <li>Smothered Pork Chop</li><li>Fried Pork Chop</li><li>Turkey Necks</li>
+          <li>Turkey Wings</li><li>Catfish</li><li>Whiting</li><li>Tilapia</li>
+          <li>Shrimp</li><li>Beef Liver &amp; Onions</li><li>Meatloaf</li><li>Chitterlings</li>
+        </ul>
+      </div>
+      <div class="col reveal">
+        <h3>🥘 Sides</h3>
+        <div class="note">Homemade daily</div>
+        <ul>
+          <li>Mac &amp; Cheese</li><li>Collard Greens</li><li>Yams</li><li>Baked Beans</li>
+          <li>Black Eyed Peas</li><li>Great Northern Beans</li><li>Rice</li><li>Mashed Potatoes</li>
+          <li>Green Beans</li><li>Cabbage</li><li>Okra &amp; Tomatoes</li><li>Fried Okra</li><li>Fries</li>
+        </ul>
       </div>
     </div>
-  </section>
-</main>
+  </div>
+</section>
+
+<section class="revs">
+  <div class="wrap">
+    <div class="sec-h reveal"><div class="k">The neighborhood's talking</div><h2>4.5★ &amp; Rising</h2></div>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"The fried chicken is crispy, hot and juicy, the mac and cheese so warm and cheesy. 10/10 — this area needed this place!"</p><div class="by">— Google review</div></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"The fried catfish is probably the best thing I've ever put in my mouth."</p><div class="by">— Google review</div></div>
+      <div class="rev reveal"><div class="stars">★★★★★</div><p>"The place is a gem! Everything we had was amazing. If you're looking for good soul food, definitely try it out."</p><div class="by">— Google review</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="fcta" id="order">
+  <div class="bg"></div><div class="scrim"></div>
+  <div class="wrap reveal">
+    <h2>Come Get You<br>Some <span class="g">Good Food.</span></h2>
+    <p>Call ahead and it'll be hot and ready. Good food, fast — made with love.</p>
+    <a class="btn btn-gold" href="tel:4074200177">Call (407) 420-0177</a>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-h reveal"><div class="k">Come on by</div><h2>Find Angel's</h2></div>
+    <div class="visit-grid">
+      <div class="vcard reveal">
+        <h3>Visit / Order</h3>
+        <div class="row"><span class="i">📍</span> 4759 Raleigh St, Orlando, FL 32811</div>
+        <div class="row"><span class="i">📞</span> <a href="tel:4074200177">(407) 420-0177</a></div>
+        <div class="row"><span class="i">🍽️</span> Dine in · Take out · Call ahead</div>
+        <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn btn-red" href="https://maps.google.com/?q=Angel's+Soul+Food+Express+4759+Raleigh+St+Orlando" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn btn-out" href="tel:4074200177">Call</a>
+        </div>
+      </div>
+      <div class="vcard reveal">
+        <h3>Hours</h3>
+        <div class="hours">
+          <div class="closed"><span>Monday</span><b>Closed</b></div>
+          <div><span>Tue – Sat</span><b>11am – 9pm</b></div>
+          <div><span>Sunday</span><b>11am – 6pm</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
-    <div class="foot">
-      <div><div class="brand" style="color:var(--mustard)">Angel's <span style="color:var(--paper)">Soul Food</span></div><p>Fresh, never frozen soul food in Metrowest Orlando.</p></div>
-      <div class="fc"><h4>Menu</h4><a href="#menu">Dinners</a><a href="#menu">Sides</a><a href="#order">Order Direct</a></div>
-      <div class="fc"><h4>Visit</h4><div>4759 Raleigh St</div><div>Orlando, FL</div><a href="tel:4074200177">(407) 420-0177</a></div>
-      <div class="fc"><h4>Hours</h4><div>Tue–Thu · 11–9</div><div>Fri–Sat · 11–10 · Sun · 12–7</div><div>Mon · Closed</div></div>
-    </div>
-    <div class="credit"><span>© <span id="yr"></span> Angel's Soul Food Express</span><span>Site concept by <a href="#">Story Digital</a> · getstorydigital.com</span></div>
+    <div class="mk">ANGEL'S <b>SOUL FOOD</b> EXPRESS</div>
+    4759 Raleigh St, Orlando FL 32811 · (407) 420-0177 · Good Food, Fast · Made With Love
+    <div class="built">Concept site by Story Digital · menu &amp; prices shown from Angel's posted menu, may vary · photos from Angel's</div>
   </div>
 </footer>
 
 <script>
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  function showAll(){document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in')});}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+    setTimeout(showAll,1600);
+  } else { showAll(); }
 </script>
-
 </body>
 </html>
